@@ -31,10 +31,14 @@ console.log("展開はRubyとは違う``を使う");
 console.log(`好きな数字は${number}です`);
 
 // if文
-const level = 13;
+const level = 6;
 // {}の後のセミコロンは必要ない
 if (level > 10){
   console.log("10より大きい");
+} else if (level > 5){
+  console.log("10より小さく５より大きい");
+} else {
+  console.log("5以下");
 }
 
 // 真偽値と比較演算子
@@ -47,3 +51,19 @@ console.log(password == 123 );
 // その場合文字列と数値で区別される
 console.log(password === "123" );
 console.log(password === 123 );
+
+// swith case
+// case　値:のコロンを忘れずに
+// breakはセミコロン
+const color = "黒";
+switch (color) {
+  case "赤":
+    console.log("赤です");
+    break;
+  case '青':
+    console.log("青です");
+    break;
+  default:
+    console.log("該当なし");
+    break;
+}
