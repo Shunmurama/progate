@@ -56,3 +56,29 @@ console.log(item.name);
 // 値の際代入もできる
 item.name = "pen";
 console.log(item);
+
+// オブジェクトを要素に持つ配列
+const charas = [
+  {name: "Jun", age: 20},
+  {name: "Gon", age: 15},
+  {name: "Ken"}
+  ];
+// 要素ごとに呼び出し可能、.でプロパティ指定可能
+console.log(charas[0]);
+console.log(charas[1].name);
+
+// 繰り返し処理でプロパティごとに呼び出し
+// 上記の定数charasを使用
+// letを忘れずに！　要素数は０から始まる、　i++に空白入らない
+for (let i = 0; i < charas.length; i++){
+  console.log("-----");
+  // 複数回呼び出すためにRubyのeachのように定数を代入するようにする
+  const chara = charas[i];
+  console.log(`${chara.name}です`);
+  // プロパティが未定義の場合は条件分岐で対応
+  if (chara.age == undefined){
+    console.log("年齢不詳");
+  } else {
+  console.log(`${chara.age}歳です`);
+  }
+}
