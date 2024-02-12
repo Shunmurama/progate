@@ -17,6 +17,7 @@ class First {
     // 自己代入
     number = number + 4;
     System.out.println(number);
+    
   }
 }
 
