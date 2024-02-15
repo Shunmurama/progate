@@ -22,6 +22,11 @@ class Data {
       Scanner scanner = new Scanner(System.in);
       System.out.print("何か文字入力して：");
       String type = scanner.next();
-      System.out.println(type);
+      System.out.print("何か数字入力して：");
+      int num = scanner.nextInt();
+      System.out.print("もう一回数字入力して：");
+      double doub = scanner.nextDouble();
+      System.out.println(type + num + doub);
+
     }
 }
