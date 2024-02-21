@@ -58,3 +58,16 @@ end
 (1..10).each do |i|
   puts "#{i}回目の計算: #{fibo(i)}"
 end
+
+def rev(num)
+  if num == 0
+    return 0
+  elsif num == 1
+    return 1
+  else
+    rev(num - 1) + rev(num - 2)
+  end
+end
+
+num = gets.to_i
+puts "#{rev(num)}を出力"
