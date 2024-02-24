@@ -30,3 +30,6 @@ even_num = num.select { |n| n.even? }
 p even_num
 odd_num = num.select { |n| n.odd? }
 p odd_num
+
+p array.each_index.select { |a| array[a] == "D" }
+
