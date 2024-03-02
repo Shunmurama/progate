@@ -33,3 +33,17 @@ p odd_num
 
 p array.each_index.select { |a| array[a] == "D" }
 
+text = <<TEXT
+郵便番号1112222です
+電話番号は33344445555です
+TEXT
+
+puts text.gsub(/(\d{3})(\d{4})/){ "#{$1}-#{$2}" }
+# .gsubで正規表現
+
+t = "誕生日は1999年1月1日です"
+
+m = /(\d+)年(\d+)月(\d+)日/.match(t)
+
+puts m
+puts m[1]
